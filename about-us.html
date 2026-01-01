@@ -13,13 +13,20 @@
 <body>
     <header class="navbar">
         <div class="logo">Timeless Angels Uganda</div>
-        <nav>
+    
+        <!-- Hamburger button -->
+        <button class="hamburger" aria-label="Toggle Menu">
+            &#9776; <!-- ☰ symbol -->
+        </button>
+    
+        <nav class="nav-links">
             <a href="index.html" class="btn-outline">Home</a>
             <a href="index.html#services" class="btn-outline">Services</a>
             <a href="index.html#directions" class="btn-outline">Directions</a>
             <a href="about-us.html" class="btn-outline">About Us</a>
         </nav>
     </header>
+
 
     <div class="header-section">
         <h1>About Timeless Angels Uganda</h1>
@@ -166,6 +173,15 @@
         </section>
 
     </div>
+    <script>
+        const hamburger = document.querySelector(".hamburger");
+        const navLinks = document.querySelector(".nav-links");
+
+        hamburger.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
+
 
 </body>
 
